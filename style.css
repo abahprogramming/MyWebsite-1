@@ -3,9 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --dark:#00337C;
+    --night: #13005A;
+    --sea: #1C82AD;
+    --cold: #03C988;
+    --clean: white;
+}
+body{
+    background-color: var(--clean);
+}
 .container{
+    background-color: var(--cold);
     width: 960px;
     margin: 5px auto;
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
+    color: var(--night);
+}
+.container .header{
+    padding: 20px;
+}
+.judul{
+    font-size: 40px;
+    font-weight: bold;
+}
+.container ul li{
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.container ul li a{
+    text-decoration: none;
+    color: var(--night);
+    padding: 5px;
+    border-radius: 10px;
+}
+.container a:hover{
+    background-color: var(--dark);
+    color: var(--cold);
 }
