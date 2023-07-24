@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 960px;
+    margin: 5px auto;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
