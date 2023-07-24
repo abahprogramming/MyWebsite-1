@@ -1,3 +1,21 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,9 +47,10 @@ body{
     font-weight: bold;
 }
 .container ul li{
-    margin-top: 10px;
+    margin-top: 15px;
     display: inline-block;
     margin-right: 20px;
+    margin-bottom: 5px;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -41,7 +60,63 @@ body{
     padding: 5px;
     border-radius: 10px;
 }
-.container a:hover{
+.container ul li a:hover{
     background-color: var(--dark);
     color: var(--cold);
 }
+
+.container .active{
+    background-color: var(--dark);
+    color: var(--cold);
+}
+.container .hero{
+    height: 300px;
+    background-image: url(img/hero/hero.jpg);
+    background-position: 0 -200px;
+    border-bottom: 1px solid var(--cold);
+    border-bottom: 1px solid var(--cold);
+}
+.content .main{
+    float: left;
+    width: 600px;
+    padding: 20px;
+}
+
+.content .main .penerbit p{
+    font-size: 12px;
+}
+.content .main .penerbit a{
+    color: var(--dark);
+    text-decoration: none;
+}
+.content .main p{
+    margin-bottom: 20px;
+}
+.content .sidebar{
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+.content .sidebar h4 {
+    margin-bottom: 5px;
+}
+.content .sidebar img{
+    width: 80px;
+    height: 80px;
+    padding-right: 5px;
+    float: left;
+}
+.content .sidebar p {
+    font-size: 16px;
+}
+.copyright {
+    padding: 20px;
+    background-color: var(--night);
+}
+.copyright p {
+    color: var(--cold);
+    text-align: center;
+}
+
+
+
